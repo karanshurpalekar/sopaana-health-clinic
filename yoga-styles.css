@@ -1,0 +1,534 @@
+/* Yoga Page Specific Styles */
+
+/* Yoga Hero Section */
+.yoga-hero {
+    padding: 160px 0 80px;
+    background: linear-gradient(135deg, #2d5a27 0%, #4a7c59 50%, #6b8e6b 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.yoga-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.08)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.06)"/><circle cx="90" cy="90" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+    background-size: 200px 200px;
+    opacity: 0.3;
+}
+
+.yoga-hero .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.yoga-hero .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+    text-align: center;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+.yoga-hero .hero-content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    font-style: italic;
+    text-align: center;
+}
+
+.yoga-hero .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+    line-height: 1.8;
+    max-width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yoga-hero-image {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.yoga-hero-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transform: rotate(-2deg);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.yoga-hero-card:nth-child(2) {
+    transform: rotate(1deg);
+    margin-left: 2rem;
+}
+
+.yoga-hero-card:nth-child(3) {
+    transform: rotate(-1deg);
+    margin-left: -1rem;
+}
+
+.yoga-hero-card:hover {
+    transform: rotate(0deg) scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.yoga-hero-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f4e4c1;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.yoga-hero-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #f8f9fa;
+}
+
+.yoga-hero-card p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    line-height: 1.4;
+    color: #e9ecef;
+}
+
+/* Yoga Benefits Section */
+.yoga-benefits {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+}
+
+.yoga-benefits::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.8));
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.benefit-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4a7c59, #6b8e6b);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.benefit-card:hover::before {
+    transform: scaleX(1);
+}
+
+.benefit-card i {
+    font-size: 3.5rem;
+    color: #4a7c59;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover i {
+    transform: scale(1.1) rotate(5deg);
+    color: #2d5a27;
+}
+
+.benefit-card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #2d5a27;
+    margin-bottom: 1.2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.benefit-card p {
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+/* Yoga Styles Section */
+.yoga-styles {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    position: relative;
+}
+
+.yoga-styles::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8), transparent);
+}
+
+.styles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.style-card {
+    background: white;
+    padding: 3rem 2.5rem;
+    border-radius: 30px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+.style-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(74, 124, 89, 0.05) 0%, rgba(107, 142, 107, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.style-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.style-card:hover::after {
+    opacity: 1;
+}
+
+.style-image {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.style-image i {
+    font-size: 4rem;
+    color: #4a7c59;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.style-card:hover .style-image i {
+    transform: scale(1.1) rotate(-5deg);
+    color: #2d5a27;
+}
+
+.style-card h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2d5a27;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+.style-card p {
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.style-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.style-card li {
+    padding: 0.5rem 0;
+    color: #475569;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.style-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Class Schedule Section */
+.class-schedule {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.schedule-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.schedule-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.schedule-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+.time {
+    background: #2563eb;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.schedule-card p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.schedule-details {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.schedule-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.schedule-details i {
+    color: #2563eb;
+}
+
+/* Yoga Booking Section */
+.yoga-booking {
+    padding: 80px 0;
+    background: white;
+}
+
+.booking-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+    align-items: start;
+}
+
+.booking-info h3 {
+    font-size: 1.8rem;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+.booking-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.booking-info li {
+    padding: 0.75rem 0;
+    color: #475569;
+    position: relative;
+    padding-left: 2rem;
+    font-size: 1.1rem;
+}
+
+.booking-info i {
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.booking-form {
+    background: #f8fafc;
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+}
+
+.booking-form h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .yoga-hero .hero-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .yoga-hero-image {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .yoga-hero-card {
+        transform: none !important;
+        margin: 0 !important;
+        flex: 1;
+        max-width: 200px;
+    }
+
+    .yoga-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .yoga-hero .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .benefits-grid,
+    .styles-grid,
+    .schedule-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .booking-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .schedule-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .schedule-details {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .yoga-hero .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .yoga-hero-image {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .yoga-hero-card {
+        max-width: none;
+    }
+
+    .benefit-card,
+    .style-card,
+    .schedule-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .booking-form {
+        padding: 2rem 1.5rem;
+    }
+} 

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Therapy - Sopaana Health Clinic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="yoga-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="chatbot-widget.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/Sopaana_Health_Clinic_Logo.jpg" alt="Sopaana Health Clinic" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="nav-line-1">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">
+                        <span class="nav-line-1">About</span>
+                        <span class="nav-line-2">Us</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="index.html#services" class="nav-link">
+                        <span class="nav-line-1">Our</span>
+                        <span class="nav-line-2">Services</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#services" class="dropdown-item">Dental Care</a></li>
+                        <li><a href="yoga.html" class="dropdown-item">Yoga Therapy</a></li>
+                        <li><a href="index.html#services" class="dropdown-item">General Physician</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">
+                        <span class="nav-line-1">Contact</span>
+                        <span class="nav-line-2">Us</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#appointment" class="nav-link appointment-btn">Book Appointment</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="yoga-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Yoga Therapy at Sopaana</h1>
+                <h2>Holistic Wellness Through Ancient Practices</h2>
+                <p>Discover the transformative power of yoga with our expert therapists. Experience personalized sessions that combine traditional wisdom with modern therapeutic techniques for complete mind-body wellness.</p>
+                <div class="hero-buttons">
+                    <a href="#yoga-classes" class="btn btn-primary">View Classes</a>
+                    <a href="#book-session" class="btn btn-secondary">Book Session</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="yoga-hero-card">
+                    <i class="fas fa-pray"></i>
+                    <h3>Personalized Sessions</h3>
+                    <p>Tailored to your needs</p>
+                </div>
+                <div class="yoga-hero-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Holistic Approach</h3>
+                    <p>Mind, body & spirit</p>
+                </div>
+                <div class="yoga-hero-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Stress Relief</h3>
+                    <p>Natural healing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yoga Benefits Section -->
+    <section id="yoga-benefits" class="yoga-benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Benefits of Yoga Therapy</h2>
+                <p>Transform your life with the healing power of yoga</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Mental Wellness</h3>
+                    <p>Reduce stress, anxiety, and depression through mindful breathing and meditation techniques.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Physical Strength</h3>
+                    <p>Build flexibility, balance, and core strength with therapeutic asanas and movements.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-lungs"></i>
+                    <h3>Respiratory Health</h3>
+                    <p>Improve lung capacity and breathing patterns through pranayama techniques.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Better Sleep</h3>
+                    <p>Enhance sleep quality and duration with relaxation and restorative practices.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Cardiovascular Health</h3>
+                    <p>Strengthen heart health and improve circulation through dynamic yoga sequences.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Emotional Balance</h3>
+                    <p>Find emotional stability and inner peace through mindfulness and meditation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yoga Styles Section -->
+    <section id="yoga-styles" class="yoga-styles">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Yoga Styles</h2>
+                <p>Choose the practice that resonates with your journey</p>
+            </div>
+            <div class="styles-grid">
+                <div class="style-card">
+                    <div class="style-image">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Hatha Yoga</h3>
+                    <p>Classical yoga focusing on physical postures and breathing techniques. Perfect for beginners and those seeking balance.</p>
+                    <ul>
+                        <li>Gentle stretching</li>
+                        <li>Breathing exercises</li>
+                        <li>Stress relief</li>
+                        <li>Flexibility improvement</li>
+                    </ul>
+                </div>
+                <div class="style-card">
+                    <div class="style-image">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Vinyasa Flow</h3>
+                    <p>Dynamic, flowing sequences that synchronize breath with movement. Energizing and strengthening practice.</p>
+                    <ul>
+                        <li>Cardiovascular workout</li>
+                        <li>Strength building</li>
+                        <li>Mindful movement</li>
+                        <li>Endurance training</li>
+                    </ul>
+                </div>
+                <div class="style-card">
+                    <div class="style-image">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Restorative Yoga</h3>
+                    <p>Gentle, therapeutic practice using props for deep relaxation and healing. Ideal for recovery and stress relief.</p>
+                    <ul>
+                        <li>Deep relaxation</li>
+                        <li>Nervous system healing</li>
+                        <li>Injury recovery</li>
+                        <li>Sleep improvement</li>
+                    </ul>
+                </div>
+                <div class="style-card">
+                    <div class="style-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Pranayama</h3>
+                    <p>Breathing techniques that enhance respiratory health and mental clarity. Essential for overall wellness.</p>
+                    <ul>
+                        <li>Breath control</li>
+                        <li>Mental clarity</li>
+                        <li>Energy enhancement</li>
+                        <li>Stress management</li>
+                    </ul>
+                </div>
+                <div class="style-card">
+                    <div class="style-image">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <h3>Meditation</h3>
+                    <p>Mindfulness and meditation practices for mental peace and spiritual growth. Transform your inner world.</p>
+                    <ul>
+                        <li>Mental peace</li>
+                        <li>Focus improvement</li>
+                        <li>Emotional balance</li>
+                        <li>Spiritual growth</li>
+                    </ul>
+                </div>
+                <div class="style-card">
+                    <div class="style-image">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Private Sessions</h3>
+                    <p>One-on-one personalized yoga therapy tailored to your specific needs and health goals.</p>
+                    <ul>
+                        <li>Personalized approach</li>
+                        <li>Individual attention</li>
+                        <li>Customized sequences</li>
+                        <li>Progress tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Schedule Section -->
+    <section id="yoga-classes" class="class-schedule">
+        <div class="container">
+            <div class="section-header">
+                <h2>Class Schedule</h2>
+                <p>Join our regular classes and workshops</p>
+            </div>
+            <div class="schedule-grid">
+                <div class="schedule-card">
+                    <div class="schedule-header">
+                        <h3>Morning Flow</h3>
+                        <span class="time">6:00 AM - 7:00 AM</span>
+                    </div>
+                    <p>Energizing vinyasa flow to start your day with vitality and focus.</p>
+                    <div class="schedule-details">
+                        <span><i class="fas fa-user"></i> All Levels</span>
+                        <span><i class="fas fa-calendar"></i> Mon, Wed, Fri</span>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <div class="schedule-header">
+                        <h3>Gentle Hatha</h3>
+                        <span class="time">9:00 AM - 10:00 AM</span>
+                    </div>
+                    <p>Classical hatha yoga for beginners and those seeking gentle practice.</p>
+                    <div class="schedule-details">
+                        <span><i class="fas fa-user"></i> Beginners</span>
+                        <span><i class="fas fa-calendar"></i> Tue, Thu, Sat</span>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <div class="schedule-header">
+                        <h3>Restorative Evening</h3>
+                        <span class="time">6:30 PM - 7:30 PM</span>
+                    </div>
+                    <p>Relaxing restorative session to unwind and prepare for peaceful sleep.</p>
+                    <div class="schedule-details">
+                        <span><i class="fas fa-user"></i> All Levels</span>
+                        <span><i class="fas fa-calendar"></i> Mon, Wed, Fri</span>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <div class="schedule-header">
+                        <h3>Pranayama & Meditation</h3>
+                        <span class="time">7:00 PM - 8:00 PM</span>
+                    </div>
+                    <p>Breathing techniques and meditation for mental clarity and inner peace.</p>
+                    <div class="schedule-details">
+                        <span><i class="fas fa-user"></i> Intermediate</span>
+                        <span><i class="fas fa-calendar"></i> Tue, Thu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book-session" class="yoga-booking">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book Your Yoga Session</h2>
+                <p>Start your wellness journey today</p>
+            </div>
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h3>Why Choose Our Yoga Therapy?</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Certified yoga therapists</li>
+                        <li><i class="fas fa-check"></i> Personalized approach</li>
+                        <li><i class="fas fa-check"></i> Therapeutic focus</li>
+                        <li><i class="fas fa-check"></i> Small group classes</li>
+                        <li><i class="fas fa-check"></i> Flexible scheduling</li>
+                        <li><i class="fas fa-check"></i> Progress tracking</li>
+                    </ul>
+                </div>
+                <div class="booking-form">
+                    <h3>Schedule Your Session</h3>
+                    <form id="yogaBookingForm">
+                        <div class="form-group">
+                            <input type="text" id="yogaName" name="yogaName" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="yogaEmail" name="yogaEmail" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="yogaPhone" name="yogaPhone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="yogaStyle" name="yogaStyle" required>
+                                <option value="">Select Yoga Style</option>
+                                <option value="hatha">Hatha Yoga</option>
+                                <option value="vinyasa">Vinyasa Flow</option>
+                                <option value="restorative">Restorative Yoga</option>
+                                <option value="pranayama">Pranayama</option>
+                                <option value="meditation">Meditation</option>
+                                <option value="private">Private Session</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="yogaExperience" name="yogaExperience" required>
+                                <option value="">Experience Level</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="yogaDate" name="yogaDate" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="yogaTime" name="yogaTime" required>
+                                <option value="">Select Time</option>
+                                <option value="06:00">6:00 AM</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="yogaGoals" name="yogaGoals" placeholder="Your wellness goals (optional)" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Yoga Session</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sopaana</h3>
+                    <p>Face Mouth Care Clinic</p>
+                    <p>Your trusted partner in comprehensive healthcare, combining dental care, yoga therapy, and general physician services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="index.html#services">Dental Care</a></li>
+                        <li><a href="yoga.html">Yoga Therapy</a></li>
+                        <li><a href="index.html#services">General Physician</a></li>
+                        <li><a href="index.html#appointment">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Healthcare Street, Medical District</p>
+                    <p><i class="fas fa-phone"></i> +91 99999 99999</p>
+                    <p><i class="fas fa-envelope"></i> info@sopaana.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sopaana Face Mouth Care Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
